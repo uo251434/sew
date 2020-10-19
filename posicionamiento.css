@@ -13,7 +13,7 @@ header .banner{/*especidificidad 11*/
 .music{/*especidificidad 10*/
   display : flex;
   justify-content:flex-end;
-  padding-top: 1.2em;
+  padding-top: 2.5em;
 }
 
 .reparto{/*especidificidad 10*/
