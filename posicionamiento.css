@@ -28,6 +28,7 @@ header .banner{/*especidificidad 11*/
 .columnas{/*especidificidad 10*/
   column-count: 2;
   column-gap: 5em;
+  column-width: 200px;
 }
 .sidenav {/*especidificidad 10*/
   width: 9em;
