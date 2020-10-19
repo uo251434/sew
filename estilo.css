@@ -15,7 +15,7 @@ h1 {
       background-color:#bd893c; 
       color: rgb(255, 255, 255);
       text-transform: uppercase;
-      padding: 0.49em 4em ; /*hace referencia al espaciado vertical respecto al resto de elementos*/
+      padding: 0.49em 0.9em ; /*hace referencia al espaciado vertical respecto al resto de elementos*/
       text-align: center;   
   }
 h2 {

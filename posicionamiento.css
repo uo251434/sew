@@ -4,6 +4,12 @@
     align-items: center;
     justify-content: center;
   }
+.banner{/*especidificidad 10*/
+    /*Usado para colocar elementos que tengan que estar uno detras de otro*/
+    display : flex;
+    align-items: center;
+    justify-content: center;
+  }
 .music{/*especidificidad 10*/
   display : flex;
   justify-content:flex-end;
