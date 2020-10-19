@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
   }
-.banner{/*especidificidad 10*/
+header .banner{/*especidificidad 11*/
     /*Usado para colocar elementos que tengan que estar uno detras de otro*/
     display : flex;
     align-items: center;
