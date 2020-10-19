@@ -1,0 +1,33 @@
+.box{/*especidificidad 10*/
+  /*Usado para colocar elementos que tengan que estar uno detras de otro*/
+    display : flex;
+    align-items: center;
+    justify-content: center;
+  }
+.music{/*especidificidad 10*/
+  display : flex;
+  justify-content:flex-end;
+  padding-top: 1.2em;
+}
+
+.reparto{/*especidificidad 10*/
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5em;
+  margin-right: 5em;
+}
+.reparto  section  div {/*especidificidad 13*/
+  flex-direction: column;
+}
+.columnas{/*especidificidad 10*/
+  column-count: 2;
+  column-gap: 5em;
+}
+.sidenav {/*especidificidad 10*/
+  width: 9em;
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  overflow-x: hidden;
+  padding: 8px 0;
+}

@@ -1,0 +1,95 @@
+body {
+      font: 400 1em Tahoma, sans-serif; /*la fueunte segunda hace de familia generica
+      si no tiene tahoma cogera una fuente de la familia sans serif para que no
+      se pierda tanto el estilo  /*Familia sans-serif*/
+      line-height: 1.8;
+      color: #000000;
+      background-color: rgb(255, 255, 255);
+      padding-left : 11em;
+      padding-right : 3em;
+      /*border: 0em, 3em, 0em, 10em;*/
+  }
+
+h1 {
+      font: 400 59px "Comic sans ms", cursive;/*, sans-serif;*/
+      background-color:#bd893c; 
+      color: rgb(255, 255, 255);
+      text-transform: uppercase;
+      padding: 0.49em 4em ; /*hace referencia al espaciado vertical respecto al resto de elementos*/
+      text-align: center;   
+  }
+h2 {
+    font: 800 2em Georgia, serif;
+    background-color: rgb(255, 255, 255);
+    color: #bd893c;
+    text-transform: uppercase;
+    padding: 1.3px ; /*hace referencia al espaciado vertical respecto al resto de elementos
+    text-align: center;  */ 
+}
+table{
+  font: 400 1.2em "Palatino Linotype", "Book Antiqua",  serif;
+  background-color:#bd893c; 
+  font-style: italic;
+  color: #fff;
+  padding: 2em  ; 
+  
+  border-right:3em solid white;
+  border-left:3em solid white;
+}
+table  caption{
+  font: 400 1.5em "Palatino Linotype", "Book Antiqua",  serif;
+  background-color:#bd893c; 
+  font-style: italic;
+  padding: 0.25em 0.25em 0em 0.25em ;
+  color: #000;
+  text-align: center;  
+  
+  border-right:2em solid white;
+  border-left:2em solid white;
+}
+
+.entradaTabla th{ /*especificidad 2 */
+  padding-right: 0.2em;
+  padding-left: 0.2em;
+}
+.cabecera {
+  font: 400 1.1em "Palatino Linotype", "Book Antiqua",  serif;
+  background-color:#bd893c; 
+  color: #000;
+
+  text-align: center; 
+
+}
+.music  p{
+  
+  font: 400 1.1em "Palatino Linotype", "Book Antiqua",  serif;
+  padding-right:  1em;
+}
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #2196F3;
+  background: #eee;
+  display: block;
+}
+.sidenav a:hover {
+  color: #064579;
+  background-color: teal;
+
+}.sidenav  .pagActual, .sidenav  .pagActual:hover{
+  background-color:  #2196F3;
+  color: #eee;
+}
+.reparto  section ul{
+  
+  margin-right: 3em; 
+}
+
+
+/*añadir cosas que aun no terminamos*/
+/*poner el tamaño en em en vez de en pixels*/
+/*añadir restricciones de integridad era?*/
+  
+
+
