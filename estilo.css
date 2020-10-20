@@ -41,7 +41,7 @@ table  caption{
   background-color:#725325; 
   font-style: italic;
   padding: 0.25em 0.25em 0em 0.25em ;
-  color: #000;
+  color: white;
   text-align: center;  
   
   border-right:2em solid white;
@@ -55,7 +55,7 @@ table  caption{
 .cabecera {
   font: 400 1.1em "Palatino Linotype", "Book Antiqua",  serif;
   background-color:#725325; 
-  color: #000;
+  color: white;
 
   text-align: center; 
 
@@ -66,7 +66,7 @@ table  caption{
   padding-right:  1em;
 }
 .sidenav a {
-  padding: 0.4em 0.5em 2em 1em;
+  padding: 1.2em 0.5em 1.2em 1em;
   margin-bottom: 0.4em;
   text-decoration: none ;
   font-size: 1.3em;
