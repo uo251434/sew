@@ -22,7 +22,7 @@ header .banner{/*especidificidad 11*/
   margin-left: 5em;
   margin-right: 5em;
 }
-.reparto  section  div {/*especidificidad 13*/
+.reparto  section  div {/*especidificidad 12*/
   flex-direction: column;
 }
 .columnas{/*especidificidad 10*/
