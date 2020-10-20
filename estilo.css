@@ -66,20 +66,20 @@ table  caption{
   padding-right:  1em;
 }
 .sidenav a {
-  padding: 6px 8px 2em 16px;
+  padding: 0.4em 0.5em 2em 1em;
   margin-bottom: 0.4em;
   text-decoration: none ;
   font-size: 1.3em;
-  color: #2196F3;
+  color: teal;
   background: #eee;
   display: block;
 }
 .sidenav a:hover {
-  color: #064579;
-  background-color: teal;
+  color: #eee;
+  background-color: #064579;
 
 }.sidenav  .pagActual, .sidenav  .pagActual:hover{
-  background-color:  #2196F3;
+  background-color: teal;
   color: #eee;
 }
 .reparto  section ul{
