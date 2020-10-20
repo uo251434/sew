@@ -12,7 +12,7 @@ body {
 
 h1 {
       font: 400 59px "Comic sans ms", cursive;/*, sans-serif;*/
-      background-color:#725325; 
+      background-color:#614419; 
       color: #ffffff;
       text-transform: uppercase;
       padding: 0.49em 0.9em ; /*hace referencia al espaciado vertical respecto al resto de elementos*/
@@ -21,14 +21,14 @@ h1 {
 h2 {
     font: 800 2em Georgia, serif;
     background-color: #ffffff;
-    color: #725325;
+    color: #614419;
     text-transform: uppercase;
     padding: 1.3px ; /*hace referencia al espaciado vertical respecto al resto de elementos
     text-align: center;  */ 
 }
 table{
   font: 400 1.2em "Palatino Linotype", "Book Antiqua",  serif;
-  background-color:#725325; 
+  background-color:#614419; 
   font-style: italic;
   color: #fff;
   padding: 2em  ; 
@@ -38,7 +38,7 @@ table{
 }
 table  caption{
   font: 400 1.5em "Palatino Linotype", "Book Antiqua",  serif;
-  background-color:#725325; 
+  background-color: #614419; 
   font-style: italic;
   padding: 0.25em 0.25em 0em 0.25em ;
   color: white;
@@ -54,7 +54,7 @@ table  caption{
 }
 .cabecera {
   font: 400 1.1em "Palatino Linotype", "Book Antiqua",  serif;
-  background-color:#725325; 
+  background-color:#614419; 
   color: #ffffff;
 
   text-align: center; 
@@ -76,10 +76,10 @@ table  caption{
 }
 .sidenav a:hover {
   color: #eee;
-  background-color: #327ebd;
+  background-color:#165798;
 
 }.sidenav  .pagActual, .sidenav  .pagActual:hover{
-  background-color:  #725325;
+  background-color:  #614419;
   color: #eee;
 }
 .reparto  section ul{
