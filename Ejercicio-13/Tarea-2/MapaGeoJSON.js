@@ -20,10 +20,10 @@ class kmlManager {
         lector.onload = function () {
             var datos = JSON.parse(lector.result);
 
-            for(var i = 0 ; i < placemarks.length; i++){
-                var coordenadas = datos.features[i].geometry;
+            for(var i = 0 ; i < datos.features.length; i++){
+                var coordenadas = datos.features[i].geometry.coordinates;
                 var coordenadasRuta = [];
-
+                alert(coordenadas.length);
                 for(var j = 0; j< coordenadas.length; j++){
                         var punto = new Object();
                         punto.lat = parseFloat(coordenadas[j][1]);                        
@@ -40,7 +40,7 @@ class kmlManager {
                     strokeWeight: 2,
                     map:mapaVar
                 });
-                flightPath.setMap(mapamapaVar);          
+                flightPath.setMap(mapaVar);          
             }
             //El evento "onload" se lleva a cabo cada vez que se completa con éxito una operación de lectura
             //La propiedad "result" es donde se almacena el contenido del archivo
