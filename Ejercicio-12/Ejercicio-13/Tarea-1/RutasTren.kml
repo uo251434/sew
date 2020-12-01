@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Placemark>
+<name>Transiberiano</name>
+<LineString>
+<extrude>1</extrude>
+<tessellate>1</tessellate>
+<coordinates>
+37.657402,55.776598
+60.579015,56.840401
+82.949384,55.019286
+104.29639,52.29778
+131.87353,43.10562
+
+</coordinates>
+<altitudeMode>clampToGround</altitudeMode>
+</LineString>
+<Style> id='linea'>
+<LineStyle>
+<color>#ff0000ff</color>
+<width>5</width>
+</LineStyle>
+</Style>
+</Placemark>
+
+
+<Placemark>
+<name>Interrail Mediterraneo</name>
+<LineString>
+<extrude>1</extrude>
+<tessellate>1</tessellate>
+<coordinates>
+2.141083,41.378565
+7.174785,43.707151
+12.4942,41.8905
+23.7308,37.9816
+28.976,41.0122
+
+</coordinates>
+<altitudeMode>clampToGround</altitudeMode>
+</LineString>
+<Style> id='linea'>
+<LineStyle>
+<color>#ff0000ff</color>
+<width>5</width>
+</LineStyle>
+</Style>
+</Placemark>
+
+
+<Placemark>
+<name>Norte de España</name>
+<LineString>
+<extrude>1</extrude>
+<tessellate>1</tessellate>
+<coordinates>
+-3.812781,43.459102
+-5.84476,43.36029
+-8.5463,42.8804
+
+</coordinates>
+<altitudeMode>clampToGround</altitudeMode>
+</LineString>
+<Style> id='linea'>
+<LineStyle>
+<color>#ff0000ff</color>
+<width>5</width>
+</LineStyle>
+</Style>
+</Placemark>
+
+</Document>
+</kml>

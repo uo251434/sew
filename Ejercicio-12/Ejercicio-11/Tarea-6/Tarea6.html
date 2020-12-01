@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Ejercicio-11</title>
+<script src="./Tarea6.js"></script>  
+<link rel="stylesheet" href="./Tarea6.css"> 
+<script src="./jquery.min.js.descarga"></script>
+
+</head>
+<body>
+    <h1>SEW Ejercicio-11: Manejo de API google maps con otra API(flickr)</h1>   
+    <h2>Taso Rodriguez Meana UO251434</h2>  
+    <P>
+        Introduce tags para buscar, la busqueda se localiza en el centro del mapa mostrado abajo
+    </P>
+    <section>
+        <h3> Busqueda por keywords</h3>
+
+        <input type="text"  id="textInput" >
+        <input type="button"  id="addkeyword" value = "Añadir keyword" onclick="buscador.addKeyword(buscador.getValue('textInput'), 20)">
+        <input type="button"  id="removekeyword" value = "eliminar keywords" onclick="buscador.removekeywords()">
+
+
+        <input type="button"  id="btnBuskey" value = "Buscar" onclick="buscador.cargarImagenes()">
+    </section>
+
+
+
+
+    <p>Lista de keyWords:</p>
+    <div id = 'keywords'>
+    
+    </div>
+    <div id = "imagenes">
+    </div>
+
+
+    <div id = "mapa">
+
+    </div>
+    
+
+    <footer>
+        
+        
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6j4mF6blrc4kZ54S6vYZ2_FpMY9VzyRU&callback=buscador.initialize"></script>  
+    </footer>
+
+</body>
+</html>
