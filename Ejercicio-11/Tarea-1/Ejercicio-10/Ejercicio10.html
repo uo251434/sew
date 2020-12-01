@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Ejercicio-10</title>
+<script src="./Ejercicio10.js"></script>  
+<link rel="stylesheet" href="./Ejercicio10.css"> 
+<script src="./jquery.min.js.descarga"></script>
+<script>   
+    var buscador = new ImageSearcher();
+</script>
+</head>
+<body>
+    <h1>SEW Ejercicio-10: Busqueda de fotos por keywords</h1>   
+    <h2>Taso Rodriguez Meana UO251434</h2>  
+
+
+    <section>
+        <h3> Busqueda por keywords</h3>
+
+        <input type="text"  id="textInput"  aria-label= "textInput">
+        <input type="button"  id="addkeyword" value = "Añadir keyword" onclick="buscador.addKeyword(buscador.getValue('textInput'), 20)">
+
+        <p>
+            Modo de Busqueda:
+            <select name="multi" id="multi">
+                <option value="any">OR</option>
+                <option value="all">AND</option>
+            </select>
+        </p>
+
+        <p>
+            Localizacion:
+            <select name="place" id="place">
+                <option value="not defined">Cualquiera</option>
+                <option value="indoors">Dentro</option>
+                <option value="outdoors">Fuera</option>
+            </select>
+        </p>
+        <input type='button'  id="idbtn"  value = 'resetear Keywords' onclick='buscador.removekeywords()'>
+        <input type="button"  id="btnBuskey" value = "Buscar" onclick="buscador.cargarImagenes(multi.value,place.value,  10)">
+    </section>
+    
+    <p>Lista de keyWords:</p>
+    <div id = 'keywords'>
+    
+    </div>
+    <div id = "imagenes">
+
+    </div>
+    
+
+    <footer>
+    </footer>
+
+</body>
+</html>

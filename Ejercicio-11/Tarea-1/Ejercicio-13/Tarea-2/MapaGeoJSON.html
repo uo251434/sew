@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Ejercicio-13</title>
+<script src="./MapaGeoJSON.js"></script>  
+<link rel="stylesheet" href="./MapaGeoJSON.css"> 
+<script src="./jquery.min.js.descarga"></script>
+
+<script>   
+    
+</script>
+
+
+</head>
+<body>
+    <h1>SEW Ejercicio-13: Manejo archivos de rutas</h1>   
+    <h2>Taso Rodriguez Meana UO251434</h2>  
+
+    <section>
+        <h3>Tarea 2 - mostrar geojson</h3>
+        <p><input id="subirArchivos" type="file" name="Archivos" onchange="manager.precessFile();" multiple="" aria-label="file"></p>
+        <p><input id="loadMapa" type="button" value="Generar Mapa" ></p>
+        <p>Archivos seleccionados: <span id="numero">0</span></p>
+        <p>Tamaño total: <span id="tamaño">0 bytes</span></p>
+        <span id="nombres"></span>
+        
+    <p id="datosgeoJSON"></p>
+    <p id="datosCoordenadas"></p>
+
+    </section>
+    
+
+
+    <p id="nombreArchivo"></p>
+    <p id="tamañoArchivo"></p>
+    <p id="tipoArchivo"></p>
+    <p id="ultimaModificacion"></p>
+    <p id="contenidoArchivo"></p>  
+    <pre id="areaTexto"></pre>
+    <p id="errorLectura"></p>
+
+
+    <div id="map"></div>
+    <div id="capture"></div>
+
+    <footer id = "footer">
+           <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6j4mF6blrc4kZ54S6vYZ2_FpMY9VzyRU&callback=manager.initialize"></script>  
+    <div id = "mapa">
+
+    </div>
+    </footer>
+
+</body>
+</html>
