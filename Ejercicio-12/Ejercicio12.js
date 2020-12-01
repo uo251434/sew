@@ -15,7 +15,7 @@ class FileLoader {
         for (var i = 0; i < nArchivos; i++) {
             nombresTiposTamaños += "<p id = 'p" + i + "'>Archivo[" + i +"] = "+ archivos[i].name  + " Tamaño: " + archivos[i].size +" bytes " + " Tipo: " + archivos[i].type+"</p>" ;
             var tipoTexto = /text.*/;
-            if(archivos[i].type == "text/json" || archivos[i].type == "text/xml" || archivos[i].type == "text/plain"){
+            if(archivos[i].type == "text/json" || archivos[i].type == "application/json" || archivos[i].type == "text/xml" || archivos[i].type == "text/plain"){
                this.vuelcaContenido(archivos[i]);
             }
         }
