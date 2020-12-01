@@ -19,7 +19,7 @@
     <section>        
         <h3>Tarea 2, modificar elementos html</h3>
         <p id="cabeceraNombre">Nombre del alumno: </p>
-        <input type="text" id="campoNombre" value="Taso Rodriguez Meana">
+        <input type="text" id="campoNombre" value="Taso Rodriguez Meana"  aria-label="campoNombre">
         <button id="botonName" onclick="qhandler.writeName()">confirmar</button>
         <button id="botonSex" onclick="qhandler.alternateGender()">Cambio alumno/alumna</button>
     </section>
@@ -48,10 +48,10 @@
     <section>
         <h3>Tarea 6, añadir y eliminar filas de tabla</h3>
         <p id="TNombre2">Nombre del alumno: </p>
-        <p id="TNombre">Nombre: <input type="text" id="INombre" value="Tarzan"></p>
-        <p id="TDura">Duracion: <input type="text" id="IDura" value="1:45"></p>
-        <p id="TGen">Genero: <input type="text" id="IGen" value="Dibujos Animados"></p>
-        <p id="TVal">Valoracion :<input type="text" id="IVal" value="8.2"></p>
+        <p id="TNombre">Nombre: <input type="text" id="INombre" value="Tarzan" aria-label="INombre"></p>
+        <p id="TDura">Duracion: <input type="text" id="IDura" value="1:45" aria-label="IDura"></p>
+        <p id="TGen">Genero: <input type="text" id="IGen" value="Dibujos Animados" aria-label="IGen"></p>
+        <p id="TVal">Valoracion :<input type="text" id="IVal" value="8.2" aria-label="IVal"></p>
         <p>
             <button id="addT" onclick="qhandler.addRow()" >Añadir filas</button>
             <button id="addR" onclick="qhandler.removeRow()" >Eliminar filas</button>

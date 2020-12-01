@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Ejercicio-09</title>
+<script src="./Ejercicio9.js"></script>  
+<link rel="stylesheet" href="./Ejercicio9.css"> 
+<script src="./jquery.min.js.descarga"></script>
+
+</head>
+<body>
+    <h1>SEW Ejercicio-08: Consumo de servicios meteorologicos en XML</h1>   
+    <h2>Taso Rodriguez Meana UO251434</h2>  
+    <div>
+        <select name="Ciudad" id="city">
+            <option value="Oviedo">Oviedo</option>
+            <option value="Roma">Roma</option>
+            <option value="Vladivostok">Vladivostok</option>
+            <option value="Istambul">Istambul</option>            
+            <option value="Yekaterinburg">Ekaterinburgo</option>
+        </select>
+        <input type="button"  id="btnLong" value = "Consultar datos" onclick="meteo.generate(city.value)">
+    </div>
+    
+    <div id = "content">
+
+    </div>
+    
+
+    <footer>
+    </footer>
+
+</body>
+</html>
