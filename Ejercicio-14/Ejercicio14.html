@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Ejercicio-14</title>
+<link rel="stylesheet" href="./Ejercicio14.css"> 
+<script src="./jquery.min.js.descarga"></script>
+
+<script>   
+    
+</script>
+
+
+</head>
+<body>
+    <h1>SEW Ejercicio-14: Aplicacion Juego Ajedrez</h1>   
+    <h2>Taso Rodriguez Meana UO251434</h2>  
+
+    
+    <div id = "content">
+
+        <div id = tablaro>
+            <p>
+                <input type="button"  id="btnReini" value = "Reiniciar Partida" onclick="chess.loadBoard()">  
+                <input type="button"  id="btnFull" value = "Jugar en pantalla completa" onclick="chess.fullScreen()">  
+
+            </p>
+            <div id = "juego">
+    
+            </div>
+        </div>
+     
+        <div id = "extra">
+            <p>Instrucciones: </p>
+            <video width="320" height="240" controls>
+                <source src="./img/instrucciones.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
+
+        </div>
+
+        <div id="wrapper">
+            <div id="container">
+                <input type="button"  id="btnsave" value = "Guardar Partida" onclick="chess.saveData()">
+                <input type="button"  id="btnLoad" value = "Cargar Partida" onclick="chess.loadSave()">
+            </div>
+        </div>
+        
+    </div>
+    
+    <footer>        
+        <script src="./Ejercicio14.js"></script>  
+    </footer>
+    
+
+</body>
+</html>

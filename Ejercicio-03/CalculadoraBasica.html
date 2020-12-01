@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Calculadora Basica</title>
+<script src="./CalculadoraBasica.js"></script>  
+<link rel="stylesheet" href="./CalculadoraBasica.css"> 
+
+</head>
+<body>
+    <h1>SEW Ejercicio-03: Calculadora Basica</h1>   
+    <input type="text" id="pantalla" disabled="">
+    
+    
+    <section class ="calculadora" >
+        <h3>Calculadora usando JavaScript</h3> 
+        <p>
+            <input type="button" value="mrc" onclick="cal.mr()">
+            <input type="button" value="m-" onclick="cal.menoryMinus()">
+            <input type="button" value="m+" onclick="cal.menoryPlus()">
+            <input type="button" value="/" onclick="cal.escribe('/')">
+        </p>
+        <p>
+            <input type="button" value="7" onclick="cal.escribe('7')">
+            <input type="button" value="8" onclick="cal.escribe('8')">
+            <input type="button" value="9" onclick="cal.escribe('9')">
+            <input type="button" value="*" onclick="cal.escribe('*')">
+        </p>
+        <p>
+            <input type="button" value="4" onclick="cal.escribe('4')">
+            <input type="button" value="5" onclick="cal.escribe('5')">
+            <input type="button" value="6" onclick="cal.escribe('6')">
+            <input type="button" value="-" onclick="cal.escribe('-')">
+        </p>
+        <p>
+            <input type="button" value="1" onclick="cal.escribe('1')">
+            <input type="button" value="2" onclick="cal.escribe('2')">
+            <input type="button" value="3" onclick="cal.escribe('3')">
+            <input type="button" value="+" onclick="cal.escribe('+')">
+        </p>
+        <p>
+            <input type="button" value="0" onclick="cal.escribe('0')">
+            <input type="button" value="." onclick="cal.escribe('.')">       
+            <input type="button" value="C" onclick="cal.reset()"> 
+            <input type="button" value="=" onclick="cal.calcula()">
+        </p>
+       
+    </section>
+        
+    
+
+    <footer>
+    </footer>
+
+</body></html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<title>Calculadora Basica</title>
+<script src="./CalculadoraCientifica.js"></script>  
+<link rel="stylesheet" href="./CalculadoraCientifica.css"> 
+
+</head>
+<body>
+    <h1>SEW Ejercicio-04: Calculadora Cientifica</h1>   
+    <input type="text" id="pantalla" disabled="">
+    
+    
+    <div class ="calculadora" >
+        <p>
+            <input type="button" value="mc" onclick="cal.mc()">
+            <input type="button" value="mr" onclick="cal.mr()">
+            <input type="button" value="m-" onclick="cal.menoryMinus()">
+            <input type="button" value="m+" onclick="cal.menoryPlus()">
+            <input type="button" value="CE"      onclick="cal.resetAll()">
+        </p>
+        <p>
+            <input type="button" value="x^2" onclick="cal.escribe('**2')">
+            <input type="button" value="x^y" onclick="cal.escribe('**')">
+            <input type="button" id = "sin" value="sin" onclick="cal.sin()">
+            <input type="button" id = "cos" value="cos" onclick="cal.cos()">
+            <input type="button" id = "tan" value="tan" onclick="cal.tan()">
+        </p>
+        <p>
+            <input type="button" value="raiz" onclick="cal.sqrt()">
+            <input type="button" value="10^x" onclick="cal.escribePre('10**')">
+            <input type="button" value="sinh" id = "sinh" onclick="cal.sinh()">
+            <input type="button" value="cosh" id = "cosh" onclick="cal.cosh()">
+            <input type="button" value="tanh" id = "tanh" onclick="cal.tanh()">
+        </p>
+        <p>
+            <input type="button" value="shift"  onclick="cal.shift()">
+            <input type="button" value="C"   onclick="cal.reset()">
+            <input type="button" value="log" id = "log"     onclick="cal.log()">
+            <input type="button" value="exp"      onclick="cal.exp()">
+            <input type="button" value="/"      onclick="cal.escribe('/')">
+        </p>
+        <p>
+            <input type="button" value="π" onclick="cal.escribe(Math.PI)">
+            <input type="button" value="7" onclick="cal.escribe('7')">
+            <input type="button" value="8" onclick="cal.escribe('8')">
+            <input type="button" value="9" onclick="cal.escribe('9')">
+            <input type="button" value="x" onclick="cal.escribe('*')">
+        </p>
+        <p>
+            <input type="button" value="n!" onclick="cal.factorial()">
+            <input type="button" value="4"  onclick="cal.escribe('4')">
+            <input type="button" value="5"  onclick="cal.escribe('5')">
+            <input type="button" value="6"  onclick="cal.escribe('6')">
+            <input type="button" value="-"  onclick="cal.escribe('-')">
+        </p>
+        <p>
+            <input type="button" value="e" onclick="cal.escribe(Math.E)">
+            <input type="button" value="1" onclick="cal.escribe('1')">
+            <input type="button" value="2" onclick="cal.escribe('2')">
+            <input type="button" value="3" onclick="cal.escribe('3')">
+            <input type="button" value="+" onclick="cal.escribe('+')">
+        </p>
+        <p>
+            <input type="button" value="(" onclick="cal.escribe('(')">
+            <input type="button" value=")" onclick="cal.escribe(')')">
+            <input type="button" value="0" onclick="cal.escribe('0')">
+            <input type="button" value="." onclick="cal.escribe('.')">            
+            <input type="button" value="=" onclick="cal.calcula()">
+        </p>
+       
+    </div>
+    <script>
+        var cal = new CalculadoraCientifica();
+    </script>
+        
+    
+
+    <footer>
+    </footer>
+
+</body></html>

@@ -1,0 +1,57 @@
+body{
+    background-color:white;
+    color:black;
+}
+h1{
+    text-align:center;
+    color:green;
+    font-size: 5em;
+}
+h2{
+    text-align:center;
+    color:blue;
+    font-size: 4em;
+}
+h3{
+    text-align:center;
+    color:red;
+    
+    font-size: 3em;
+}
+h4{
+    text-align:center;
+    color:black;
+    font-size: 2em;
+}
+button{
+    color:gray;
+    min-width: 100px;
+}
+input, select{
+    min-height: 1.6em;
+    width:  5em;
+    font-size: 2em;
+}
+
+p{
+    font-size: 1.2em;
+}
+.calculadora{
+    padding: 1em;
+    align-items: center;
+    background-color: burlywood;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+
+}
+.columna{
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 5em;
+    row-gap: 5em;
+    padding : 1em;
+}

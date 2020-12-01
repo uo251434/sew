@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- saved from url=(0078)http://di002.edv.uniovi.es/~cueva/JavaScript/68-ES6-Ejemplo-uso-de-clases.html -->
+<html lang="es"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><style lang="en" type="text/css" id="dark-mode-custom-style"></style><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Ejercicio-11</title>
+<script src="./Ejercicio11.js"></script>  
+<link rel="stylesheet" href="./Ejercicio11.css"> 
+<script src="./jquery.min.js.descarga"></script>
+<link href="./Clase Geolocalización_files/104-ClaseGeolocalizacion.css" rel="stylesheet">
+<script>   
+    var posicion = new Geolocalizacion();
+</script>
+</head>
+<body>
+    <h1>SEW Ejercicio-10: Manejo de API geolocalizacion</h1>   
+    <h2>Taso Rodriguez Meana UO251434</h2>  
+
+    <section>
+        <h3>Tarea 1</h3>
+        <input type="button"  id="btnBuskey" value = "Buscar" onclick="posicion.verTodo(&#39;ubicacion&#39);">
+        <input type="button"  id="btnBuskey" value = "Mostrar mapa" onclick="posicion.getMapaEstaticoGoogle(&#39;mapa&#39);">
+    </section>
+    
+    <section id = "ubicacion">
+
+    </section>
+
+    <div id = "mapa">
+
+    </div>
+
+    <footer>
+    </footer>
+
+</body>
+</html>

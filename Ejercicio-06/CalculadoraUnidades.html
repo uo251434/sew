@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Calculadora Basica</title>
+<script src="./CalculadoraUnidades.js"></script>  
+<link rel="stylesheet" href="./CalculadoraUnidades.css"> 
+<script>
+    var cal = new CalculadoraUnidades();
+</script>
+</head>
+<body>
+    <h1>SEW Ejercicio-06: Calculadora Unidades</h1>   
+    <h2>Taso Rodriguez Meana UO251434</h2>  
+
+    <div class ="content">
+    
+    
+    
+    <div  class = "columna" >
+        
+        <div class = "calculadora">
+            <h4>Longitud</h4>
+                <p>Quiero convertir</p>
+                <input type="text"  id="pantallaLong" value = "0" >
+                <select name="units" id="unitsLong">
+                    <option value="1">m</option>
+                    <option value="1000">km</option>
+                    <option value="0.01">cm</option>
+                    <option value="0.001">mm</option>
+                    <option value="1609.34">millas</option>
+                    <option value="0,3048">pies</option>
+                </select>
+                <p>a:</p>
+                <input type="text"  id="resultLong" disabled = "" >
+                <select name="units" id="unitsResultLong">
+                    <option value="1">m</option>
+                    <option value="1000">km</option>
+                    <option value="0.01">cm</option>
+                    <option value="0.001">mm</option>
+                    <option value="1609.34">millas</option>
+                    <option value="0,3048">pies</option>
+                </select>
+                <input type="button"  id="btnLong" value = 'calcular' onclick="cal.calculate(unitsLong.value, unitsResultLong.value, pantallaLong.value, 'resultLong')">
+        </div>
+
+        <div class = "calculadora">
+            <h4>Masa</h4>
+                <p>Quiero convertir</p>
+                <input type="text"  id="pantallaMasa" value = "0" >
+                <select name="units" id="unitsMasa">
+                    <option value="1">kg</option>
+                    <option value="1000">g</option>
+                    <option value="0.001">tonelada</option>
+                    <option value="1e6">mg</option>
+                    <option value="2.20462">libra</option>
+                    <option value="35.2739199982575">onza</option>
+                </select>
+                <p>a:</p>
+                <input type="text"  id="resultMasa" disabled = "" >
+                <select name="units" id="unitsResultMasa">
+                    <option value="1000">g</option>
+                    <option value="1">kg</option>
+                    <option value="0.001">tonelada</option>
+                    <option value="1e6">mg</option>
+                    <option value="2.20462">libra</option>
+                    <option value="35.2739199982575">onza</option>
+                </select>
+                <input type="button"  id="btnMasa" value = 'calcular' onclick="cal.calculate(unitsMasa.value, unitsResultMasa.value, pantallaMasa.value, 'resultMasa')">
+        </div>
+
+        <div class = "calculadora">
+            <h4>Velocidad</h4>
+                <p>Quiero convertir</p>
+                <input type="text"  id="pantallavel" value = "0" >
+                <select name="units" id="unitsvel">
+                    <option value="1">m/s</option>
+                    <option value="3.6">km/h</option>
+                    <option value="3.28084">pie/s</option>
+                    <option value="2.23694">millas/h</option>
+                    <option value="1.9438477170141">nudos</option>
+                </select>
+                <p>a:</p>
+                <input type="text"  id="resultvel" disabled = "" >
+                <select name="units" id="unitsResultvel">
+                    <option value="3.6">km/h</option>
+                    <option value="1">m/s</option>
+                    <option value="3.28084">pie/s</option>
+                    <option value="2.23694">millas/h</option>
+                    <option value="1.9438477170141">nudos</option>
+                </select>
+                <input type="button"  id="btnvel" value = 'calcular' onclick="cal.calculate(unitsvel.value, unitsResultvel.value, pantallavel.value, 'resultvel')">
+        </div>
+
+        <div class = "calculadora">
+            <h4>Area</h4>
+                <p>Quiero convertir</p>
+                <input type="text"  id="pantallaArea" value = "0" >
+                <select name="units" id="unitsArea">
+                    <option value="1">m^2</option>
+                    <option value="1e-6">km^2</option>
+                    <option value="3,861e-7">milla^2</option>
+                    <option value="1e-4">hectareas</option>
+                    <option value="0.000247105">acres</option>
+                </select>
+                <p>a:</p>
+                <input type="text"  id="resultArea" disabled = "" >
+                <select name="units" id="unitsResultArea">
+                    <option value="1e-6">km^2</option>
+                    <option value="1">m^2</option>
+                    <option value="3,861e-7">milla^2</option>
+                    <option value="1e-4">hectareas</option>
+                    <option value="0.000247105">acres</option>
+                </select>
+                <input type="button"  id="btnArea" value = 'calcular' onclick="cal.calculate(unitsArea.value, unitsResultArea.value, pantallaArea.value, 'resultArea')">
+        </div>
+
+        <div class = "calculadora">
+            <h4>Volumen</h4>
+                <p>Quiero convertir</p>
+                <input type="text"  id="pantallaVol" value = "0" >
+                <select name="units" id="unitsVol">
+                    <option value="1">litro</option>
+                    <option value="0.219969">Galón Imp</option>
+                    <option value="0.001">m^3</option>
+                    <option value="1000">ml</option>
+                    <option value="0.03531468">pie^3</option>
+                    <option value="35.1951">Onza liq Imp</option>
+                </select>
+                <p>a:</p>
+                <input type="text"  id="resultVol" disabled = "" >
+                <select name="units" id="unitsResultVol">
+                    <option value="0.219969">Galón Imp</option>
+                    <option value="1">litro</option>
+                    <option value="0.001">m^3</option>
+                    <option value="1000">ml</option>
+                    <option value="0.03531468">pie^3</option>
+                    <option value="35.1951">Onza liq Imp</option>
+                </select>
+                <input type="button"  id="btnVol" value = 'calcular' onclick="cal.calculate(unitsVol.value, unitsResultVol.value, pantallaVol.value, 'resultVol')">
+        </div>
+
+        <div class = "calculadora">
+            <h4>Energia</h4>
+                <p>Quiero convertir</p>
+                <input type="text"  id="pantallaEner" value = "0" >
+                <select name="units" id="unitsEner">
+                    <option value="1">Julio</option>
+                    <option value="0.000239006">kCal</option>
+                    <option value="0.001">kJulio</option>
+                    <option value="2.7778e-7">kilowatio-hora</option>
+                    <option value="6.242e+18">eV</option>
+                    <option value="0.737562">Pie-libra-fuerza</option>
+                    
+                </select>
+                <p>a:</p>
+                <input type="text"  id="resultEner" disabled = "" >
+                <select name="units" id="unitsResultEner">
+                    <option value="0.000239006">kCal</option>
+                    <option value="1">Julio</option>
+                    <option value="0.001">kJulio</option>
+                    <option value="2.7778e-7">kilowatio-hora</option>
+                    <option value="6.242e+18">eV</option>
+                    <option value="0.737562">Pie-libra-fuerza</option>
+                </select>
+                <input type="button"  id="btnEner" value = 'calcular' onclick="cal.calculate(unitsEner.value, unitsResultEner.value, pantallaEner.value, 'resultEner')">
+        </div>
+
+       
+    </div>
+
+    </div>
+        
+    
+
+    <footer>
+    </footer>
+
+</body></html>
